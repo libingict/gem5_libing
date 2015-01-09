@@ -1,0 +1,381 @@
+!SESSION 2015-01-08 22:00:28.978 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-01-08 22:01:30.544
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-01-09 14:08:21.975 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/libing/git_project -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-01-09 14:08:31.468
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 4 0 2015-01-09 14:14:28.035
+!MESSAGE Error: Cannot run program "g++": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "g++": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-01-09 14:14:28.562
+!MESSAGE Indexed 'gem5_libing' (0 sources, 0 headers) in 0.00 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2015-01-09 14:15:37.030
+!MESSAGE Error: Params is not a member of DerivedClockDomain
+!STACK 0
+java.lang.IllegalArgumentException: Params is not a member of DerivedClockDomain
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.invalidMember(ClassTypeHelper.java:1007)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.getVisibility(ClassTypeHelper.java:923)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPClassType.getVisibility(CPPClassType.java:422)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.getVisibility(PDOMCPPLinkage.java:556)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addChild(PDOMCPPLinkage.java:567)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:518)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:379)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1184)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:88)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:122)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPQualifierType.marshal(CPPQualifierType.java:99)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPPointerType.marshal(CPPPointerType.java:117)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunctionType.marshal(CPPFunctionType.java:149)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:443)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:437)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.setType(PDOMCPPFunction.java:220)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.initData(PDOMCPPFunction.java:124)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigureFunction.run(PDOMCPPLinkage.java:250)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:911)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:345)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2015-01-09 14:15:50.956
+!MESSAGE Error: Params is not a member of X86System
+!STACK 0
+java.lang.IllegalArgumentException: Params is not a member of X86System
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.invalidMember(ClassTypeHelper.java:1007)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.getVisibility(ClassTypeHelper.java:923)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPClassType.getVisibility(CPPClassType.java:422)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.getVisibility(PDOMCPPLinkage.java:556)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addChild(PDOMCPPLinkage.java:567)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:518)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:379)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1184)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:88)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:122)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPPointerType.marshal(CPPPointerType.java:117)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunctionType.marshal(CPPFunctionType.java:149)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:443)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:437)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.setType(PDOMCPPFunction.java:220)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.initData(PDOMCPPFunction.java:124)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigureFunction.run(PDOMCPPLinkage.java:250)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:911)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:345)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2015-01-09 14:16:00.283
+!MESSAGE Error: Params is not a member of BasicExtLink
+!STACK 0
+java.lang.IllegalArgumentException: Params is not a member of BasicExtLink
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.invalidMember(ClassTypeHelper.java:1007)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.getVisibility(ClassTypeHelper.java:923)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPClassType.getVisibility(CPPClassType.java:422)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.getVisibility(PDOMCPPLinkage.java:556)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addChild(PDOMCPPLinkage.java:567)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:518)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:379)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1184)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:88)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:122)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPQualifierType.marshal(CPPQualifierType.java:99)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPPointerType.marshal(CPPPointerType.java:117)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunctionType.marshal(CPPFunctionType.java:149)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:443)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:437)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.setType(PDOMCPPFunction.java:220)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.initData(PDOMCPPFunction.java:124)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigureFunction.run(PDOMCPPLinkage.java:250)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:911)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:345)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2015-01-09 14:16:00.285
+!MESSAGE Error: Params is not a member of BasicIntLink
+!STACK 0
+java.lang.IllegalArgumentException: Params is not a member of BasicIntLink
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.invalidMember(ClassTypeHelper.java:1007)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.getVisibility(ClassTypeHelper.java:923)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPClassType.getVisibility(CPPClassType.java:422)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.getVisibility(PDOMCPPLinkage.java:556)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addChild(PDOMCPPLinkage.java:567)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:518)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:379)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1184)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:88)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:122)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPQualifierType.marshal(CPPQualifierType.java:99)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPPointerType.marshal(CPPPointerType.java:117)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunctionType.marshal(CPPFunctionType.java:149)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:443)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:437)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.setType(PDOMCPPFunction.java:220)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.initData(PDOMCPPFunction.java:124)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigureFunction.run(PDOMCPPLinkage.java:250)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:911)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:345)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2015-01-09 14:16:02.753
+!MESSAGE Error: Params is not a member of PciConfigAll
+!STACK 0
+java.lang.IllegalArgumentException: Params is not a member of PciConfigAll
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.invalidMember(ClassTypeHelper.java:1007)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.getVisibility(ClassTypeHelper.java:923)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPClassType.getVisibility(CPPClassType.java:422)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.getVisibility(PDOMCPPLinkage.java:556)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addChild(PDOMCPPLinkage.java:567)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:518)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:379)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1184)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:88)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:122)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPQualifierType.marshal(CPPQualifierType.java:99)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPPointerType.marshal(CPPPointerType.java:117)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunctionType.marshal(CPPFunctionType.java:149)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:443)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:437)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.setType(PDOMCPPFunction.java:220)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.initData(PDOMCPPFunction.java:124)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigureFunction.run(PDOMCPPLinkage.java:250)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:911)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:345)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2015-01-09 14:16:03.700
+!MESSAGE Error: Params is not a member of AmbaFake
+!STACK 0
+java.lang.IllegalArgumentException: Params is not a member of AmbaFake
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.invalidMember(ClassTypeHelper.java:1007)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.getVisibility(ClassTypeHelper.java:923)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPClassType.getVisibility(CPPClassType.java:422)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.getVisibility(PDOMCPPLinkage.java:556)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addChild(PDOMCPPLinkage.java:567)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:518)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:379)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1184)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:88)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:122)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPQualifierType.marshal(CPPQualifierType.java:99)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPPointerType.marshal(CPPPointerType.java:117)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunctionType.marshal(CPPFunctionType.java:149)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:443)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:437)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.setType(PDOMCPPFunction.java:220)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.initData(PDOMCPPFunction.java:124)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigureFunction.run(PDOMCPPLinkage.java:250)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:911)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:345)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2015-01-09 14:16:06.826
+!MESSAGE Error: Params is not a member of LRU
+!STACK 0
+java.lang.IllegalArgumentException: Params is not a member of LRU
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.invalidMember(ClassTypeHelper.java:1007)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.getVisibility(ClassTypeHelper.java:923)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPClassType.getVisibility(CPPClassType.java:422)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.getVisibility(PDOMCPPLinkage.java:556)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addChild(PDOMCPPLinkage.java:567)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:518)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:379)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1184)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:88)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:122)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPQualifierType.marshal(CPPQualifierType.java:99)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPPointerType.marshal(CPPPointerType.java:117)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunctionType.marshal(CPPFunctionType.java:149)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:443)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:437)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.setType(PDOMCPPFunction.java:220)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.initData(PDOMCPPFunction.java:124)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigureFunction.run(PDOMCPPLinkage.java:250)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:911)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:345)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2015-01-09 14:16:06.829
+!MESSAGE Error: Params is not a member of RandomRepl
+!STACK 0
+java.lang.IllegalArgumentException: Params is not a member of RandomRepl
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.invalidMember(ClassTypeHelper.java:1007)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.ClassTypeHelper.getVisibility(ClassTypeHelper.java:923)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPClassType.getVisibility(CPPClassType.java:422)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.getVisibility(PDOMCPPLinkage.java:556)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addChild(PDOMCPPLinkage.java:567)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:518)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:379)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1184)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:88)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:122)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPQualifierType.marshal(CPPQualifierType.java:99)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPPointerType.marshal(CPPPointerType.java:117)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunctionType.marshal(CPPFunctionType.java:149)
+	at org.eclipse.cdt.internal.core.pdom.db.TypeMarshalBuffer.marshalType(TypeMarshalBuffer.java:118)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:443)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeType(PDOMLinkage.java:437)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.setType(PDOMCPPFunction.java:220)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPFunction.initData(PDOMCPPFunction.java:124)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigureFunction.run(PDOMCPPLinkage.java:250)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:911)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:345)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
