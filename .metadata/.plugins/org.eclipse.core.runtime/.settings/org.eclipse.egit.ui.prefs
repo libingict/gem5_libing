@@ -1,0 +1,2 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>first commit</message>\n<message>gem5_libing,&\#x0A;first commit, the head verson.&\#x0A;Download from http\://www.m5sim.org/Repository.&\#x0A;hg clone http\://repo.gem5.org/gem5-stable</message>\n</messages>
+eclipse.preferences.version=1
